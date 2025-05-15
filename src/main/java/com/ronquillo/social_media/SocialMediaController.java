@@ -9,6 +9,10 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 @RestController
+@CrossOrigin(origins = {
+        "http://localhost:5173",
+        "https://final-ui-gamma.vercel.app/"
+})
 @RequestMapping("/api/posts")
 public class SocialMediaController {
 
